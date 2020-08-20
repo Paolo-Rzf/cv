@@ -1,7 +1,7 @@
 $(function() {
     var words = [
-        'un développeur',
-        'un graphiste'
+        'un graphiste',
+        'un développeur'
     ],
     i = 0;
 
