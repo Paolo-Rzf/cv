@@ -32,4 +32,24 @@ $(function() {
         duration: 2000,
         distance: '100%'
     })
+
+    $('#top').click(function ()  {
+        $('html, body').animate({
+            scrollTop: '0px'
+        }, 
+        1000);
+        return false; 
+    });
 })
+
+jQuery(function(){
+    $(function () {
+        $(window).scroll(function () { //Fonction appelée quand on descend la page
+            if ($(this).scrollTop() > 400 ) {  // Quand on est à 200pixels du haut de page,
+                $('#scrollUp').css('opacity','0.8'); // Replace à 10pixels de la droite l'image
+            } else { 
+                $('#scrollUp').removeAttr( 'style' ); // Enlève les attributs CSS affectés par javascript
+            }
+        });
+    });
+});
