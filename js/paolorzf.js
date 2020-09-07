@@ -40,6 +40,13 @@ $(function() {
         1000);
         return false; 
     });
+
+    $('.card').css('height', $('.card').width());
+    $('.card .img span').css('background-size', $('.card').width());
+    $(window).resize(function() {
+        $('.card').css('height', $('.card').width());
+        $('.card .img span').css('background-size', $('.card').width());
+    })
 })
 
 jQuery(function(){
